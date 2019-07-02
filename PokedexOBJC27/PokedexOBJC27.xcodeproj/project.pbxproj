@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0CBB662D22CBB6200013212D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB662C22CBB6200013212D /* AppDelegate.m */; };
-		0CBB663022CBB6200013212D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB662F22CBB6200013212D /* ViewController.m */; };
 		0CBB663322CBB6200013212D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB663122CBB6200013212D /* Main.storyboard */; };
 		0CBB663522CBB6210013212D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB663422CBB6210013212D /* Assets.xcassets */; };
 		0CBB663822CBB6210013212D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB663622CBB6210013212D /* LaunchScreen.storyboard */; };
@@ -19,8 +18,6 @@
 		0CBB662822CBB6200013212D /* PokedexOBJC27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokedexOBJC27.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBB662B22CBB6200013212D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CBB662C22CBB6200013212D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0CBB662E22CBB6200013212D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0CBB662F22CBB6200013212D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0CBB663222CBB6200013212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CBB663422CBB6210013212D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CBB663722CBB6210013212D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,9 +55,9 @@
 		0CBB662A22CBB6200013212D /* PokedexOBJC27 */ = {
 			isa = PBXGroup;
 			children = (
-				0CBB662E22CBB6200013212D /* ViewController.h */,
-				0CBB662F22CBB6200013212D /* ViewController.m */,
-				0CBB664222CBB6500013212D /* STORYBOARDS */,
+				0CBB664522CBB6C00013212D /* MODELS */,
+				0CBB664422CBB6BA0013212D /* VIEWS */,
+				0CBB664322CBB6B20013212D /* CONTROLLERS */,
 				0CBB664122CBB6390013212D /* RESOURCES */,
 			);
 			path = PokedexOBJC27;
@@ -85,6 +82,44 @@
 				0CBB663622CBB6210013212D /* LaunchScreen.storyboard */,
 			);
 			path = STORYBOARDS;
+			sourceTree = "<group>";
+		};
+		0CBB664322CBB6B20013212D /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				0CBB664722CBB6D60013212D /* MODEL CONTROLLERS */,
+				0CBB664622CBB6CE0013212D /* VIEW CONTROLLERS */,
+			);
+			path = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		0CBB664422CBB6BA0013212D /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				0CBB664222CBB6500013212D /* STORYBOARDS */,
+			);
+			path = VIEWS;
+			sourceTree = "<group>";
+		};
+		0CBB664522CBB6C00013212D /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		0CBB664622CBB6CE0013212D /* VIEW CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "VIEW CONTROLLERS";
+			sourceTree = "<group>";
+		};
+		0CBB664722CBB6D60013212D /* MODEL CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MODEL CONTROLLERS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +192,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CBB663022CBB6200013212D /* ViewController.m in Sources */,
 				0CBB663B22CBB6210013212D /* main.m in Sources */,
 				0CBB662D22CBB6200013212D /* AppDelegate.m in Sources */,
 			);
@@ -303,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
-				INFOPLIST_FILE = PokedexOBJC27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokedexOBJC27/RESOURCES/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
-				INFOPLIST_FILE = PokedexOBJC27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokedexOBJC27/RESOURCES/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
